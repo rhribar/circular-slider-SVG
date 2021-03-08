@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, 
+    initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="app.css">
+    
+</head>
+<body>
+  <div id="container">
+    <svg id="rootSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+      <rect id="rectangle" width="300" height="300" fill="#eee"></rect>
+      <circle id="circle" cx="200" cy="85" r="30"></circle>
+    </svg>
+    <input type="range" min="1" max="60" oninput="moveSlider(this, 'x')"/>
+    <input type="range" min="1" max="40" oninput="moveSlider(this, 'y')"/>
+  </div>
+</body>
+  <script src="app.js" defer></script>
+</html>

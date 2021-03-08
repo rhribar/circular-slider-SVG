@@ -1,0 +1,22 @@
+@mixin tip-styling {
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.tip-top {
+    @include tip-styling;
+
+    display:none;
+    @media only screen and (max-width: $bp-medium) {
+        display: flex;
+    }
+}
+
+.tip-bot {
+    @include tip-styling;
+    
+    @media only screen and (max-width: $bp-medium) {
+        display: none;
+    }
+}

@@ -1,0 +1,57 @@
+.legend {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    &__container {
+        list-style: none;
+    }
+
+    &__price {
+        font-size: 4.5rem;
+        font-weight: 600;
+    }
+
+    &__title {
+        margin-left: 2rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    &__color {
+        &--transportation, &--food, &--insurance, &--entertainment, &--healthcare {
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+        }
+
+        &--transportation {
+            background: var(--color-purple);
+        }
+
+        &--food {
+            background: var(--color-blue);
+        }
+
+        &--insurance {
+            background: var(--color-green);
+        }
+
+        &--entertainment {
+            background: var(--color-orange);
+        }
+
+        &--healthcare {
+            background: var(--color-red);
+        }
+    }
+
+    &__details {
+        margin-left: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}

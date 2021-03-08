@@ -1,0 +1,54 @@
+{
+  "name": "circular-slider-es6-class",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "webpack",
+    "dev-server": "webpack-dev-server",
+    "start": "webpack serve --open",
+    "test-e2e": "nightwatch",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.13.8",
+    "@babel/plugin-transform-modules-commonjs": "^7.13.8",
+    "@babel/preset-env": "^7.13.9",
+    "babel-jest": "^26.6.3",
+    "babel-loader": "^8.2.2",
+    "chromedriver": "^89.0.0",
+    "css-loader": "^5.1.1",
+    "install": "^0.13.0",
+    "jest": "^26.6.3",
+    "jest-webpack": "^0.5.1",
+    "nightwatch": "^1.5.1",
+    "node-sass": "^5.0.0",
+    "npm": "^7.6.1",
+    "postcss-loader": "^5.1.0",
+    "sass": "^1.32.8",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.24.4",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "cucumber": "^7.0.0-rc.0",
+    "nightwatch-api": "^3.0.2"
+  },
+  "jest": {
+    "verbose": true,
+    "testEnvironment": "jsdom",
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
+  }
+}
